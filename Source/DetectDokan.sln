@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29326.143
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetectDokan", "DetectDokan\DetectDokan.csproj", "{96B7E4A0-23CF-4CCD-9D4C-25F6ED03B367}"
 EndProject
@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		..\Readme.md = ..\Readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstallDokan.WPF", "InstallDokan.WPF\InstallDokan.WPF.csproj", "{884E603D-545A-46EF-A8E4-88A763DE4A25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,18 @@ Global
 		{96B7E4A0-23CF-4CCD-9D4C-25F6ED03B367}.Release|x64.Build.0 = Release|x64
 		{96B7E4A0-23CF-4CCD-9D4C-25F6ED03B367}.Release|x86.ActiveCfg = Release|x86
 		{96B7E4A0-23CF-4CCD-9D4C-25F6ED03B367}.Release|x86.Build.0 = Release|x86
+		{884E603D-545A-46EF-A8E4-88A763DE4A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884E603D-545A-46EF-A8E4-88A763DE4A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{884E603D-545A-46EF-A8E4-88A763DE4A25}.Debug|x64.ActiveCfg = Debug|x64
+		{884E603D-545A-46EF-A8E4-88A763DE4A25}.Debug|x64.Build.0 = Debug|x64
+		{884E603D-545A-46EF-A8E4-88A763DE4A25}.Debug|x86.ActiveCfg = Debug|x86
+		{884E603D-545A-46EF-A8E4-88A763DE4A25}.Debug|x86.Build.0 = Debug|x86
+		{884E603D-545A-46EF-A8E4-88A763DE4A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{884E603D-545A-46EF-A8E4-88A763DE4A25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{884E603D-545A-46EF-A8E4-88A763DE4A25}.Release|x64.ActiveCfg = Release|Any CPU
+		{884E603D-545A-46EF-A8E4-88A763DE4A25}.Release|x64.Build.0 = Release|Any CPU
+		{884E603D-545A-46EF-A8E4-88A763DE4A25}.Release|x86.ActiveCfg = Release|Any CPU
+		{884E603D-545A-46EF-A8E4-88A763DE4A25}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

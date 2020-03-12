@@ -1,0 +1,54 @@
+﻿<Window
+    x:Class="InstallDokanView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="260.741"
+    Height="148.148"
+    MinWidth="220"
+    MinHeight="125"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d" ResizeMode="NoResize" BorderBrush="Blue" WindowStyle="None" BorderThickness="1" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </Window.Resources>
+
+    <Grid Margin="0,0,0,0
+          ">
+        <TextBlock
+            x:Name="driverInstallState"
+            Margin="10,24,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Dokan Driver:"
+            Grid.ColumnSpan="2" Width="239" />
+        <ComboBox
+            Margin="10,58,10,0"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Top"
+            ItemsSource="{Binding SupportedActions}"
+            SelectedIndex="{Binding SelectedActionIndex}"
+            SelectedValuePath="Id" Grid.ColumnSpan="2" />
+        <StackPanel
+            VerticalAlignment="Bottom"
+            Orientation="Horizontal" Margin="0,0,0,16.202" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+            <Button
+                Width="80"
+                Height="20"
+                Margin="5"
+                IsEnabled="{Binding IsValidActionIndex}"
+                Click="OK_Click" Content="{Binding OKButtonText, FallbackValue=OK}"/>
+            <Button
+                Width="80"
+                Height="20"
+                Margin="5"
+                Click="Cancel_Click" Content="{Binding CancelButtonText, FallbackValue=Cancel}"/>
+        </StackPanel>
+        <StackPanel
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            Orientation="Horizontal" Margin="181.148,0,-132.148,1.851" Grid.Column="1"/>
+    </Grid>
+</Window>
